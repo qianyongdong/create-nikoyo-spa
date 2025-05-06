@@ -1,0 +1,36 @@
+{
+  "name": "create-nikoyo-spa",
+  "version": "1.0.0",
+  "description": "CLI tool to create Nikoyo SPA projects",
+  "main": "bin/index.js",
+  "bin": {
+    "create-nikoyo-spa": "bin/index.js"
+  },
+  "scripts": {
+    "release": "bumpp && npm --registry=https://registry.npmjs.org"
+  },
+  "keywords": [
+    "cli",
+    "spa",
+    "nikoyo"
+  ],
+  "author": "qianyongdong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianyongdong/create-nikoyo-spa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qianyongdong/create-nikoyo-spa.git/issues"
+  },
+  "homepage": "https://github.com/qianyongdong/create-nikoyo-spa.git#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "bumpp": "^10.1.0"
+  }
+}
