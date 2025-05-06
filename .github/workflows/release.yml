@@ -1,4 +1,3 @@
-
 name: Release
 
 on:
@@ -16,6 +15,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 8
 
       - name: Set node
         uses: actions/setup-node@v4
@@ -23,6 +24,18 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
-      - run: npx changelogithub
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Generate changelog
+        run: npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
