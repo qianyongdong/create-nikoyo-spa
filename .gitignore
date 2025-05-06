@@ -7,6 +7,8 @@
 node_modules/
 venv/
 __pycache__/
+example/
+
 
 # 编译产物
 *.class
@@ -21,7 +23,6 @@ Thumbs.db
 # 日志文件
 *.log
 npm-debug.log*
-
 # 敏感数据
 .env
 *.key

@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@test/app-auth": "/apps/auth/main.js",
+    "@test/app-navbar": "/apps/navbar/main.js",
+    "@test/app-test": "/apps/test/main.js"
+  }
+}

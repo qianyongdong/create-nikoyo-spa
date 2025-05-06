@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@test/app-navbar": "http://localhost:4001/src/main.ts",
+    "@test/app-test": "http://localhost:4101/src/main.ts",
+    "@test/app-auth": "http://localhost:4102/src/main.ts"
+  }
+}

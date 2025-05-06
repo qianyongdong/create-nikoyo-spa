@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "CLI tool to create Nikoyo SPA projects",
   "main": "bin/index.js",
+  "type": "commonjs",
   "bin": {
     "create-nikoyo-spa": "bin/index.js"
   },
   "scripts": {
-    "release": "bumpp && npm --registry=https://registry.npmjs.org"
+    "release": "bumpp && npm publish --registry=https://registry.npmjs.org"
   },
   "keywords": [
     "cli",
@@ -27,6 +28,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
     "inquirer": "^9.2.12",
     "ora": "^5.4.1"
   },
